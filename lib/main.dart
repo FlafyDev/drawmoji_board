@@ -446,7 +446,7 @@ class EmojiKeyboard extends HookConsumerWidget {
         },
         body: jsonEncode({
           "emojiBase64": "data:image/png;base64,${base64Encode(buffer)}",
-          "modelType": "transfer",
+          "modelType": "transfer-fine",
         }),
       );
       final resJson = jsonDecode(res.body);
